@@ -1,0 +1,75 @@
+.h1 {
+  font-size: 1.2em;
+}
+.redMark {
+  color: #800000;
+}
+.navBar {
+   list-style-type: none;
+   height: 100px;
+   list-style-type: none;
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.navBar a {
+  text-decoration: none;
+  font-family: impact;
+  color: #000000;
+  display: inline-block;
+  padding: 10px 200px;
+  background-color: white;
+  border-bottom: 5px solid #000000;
+  border-top: 5px solid #000000;
+}
+.navBar li {
+  display: inline-block;
+}
+
+.main {
+  margin-top: 1em;
+  margin-left: 2 em;
+}
+
+.rightSide {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.Bio {
+  margin-top: 1em;
+  position: fixed;
+  left: 0;
+  overflow-x: auto;
+  height:2000px;
+  width: 1000px;
+  margin: 50px auto;
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 100px 0 0 0;
+}
+
+.wrapper_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 300px;
+  height: 250px;
+  padding: 20px;
+  font-size: 20px;
+  scroll-snap-align: start;
+  text-decoration: none;
+  font-family: Franklin Gothic Medium;
+ }
+.item1 {
+  display: inline-block;
+  background-color: #FFFFFF;
+  scroll-snap-align: start;
+}
+.item2 {
+ display: block;
+ width: 339px;
+ background-color: #1D7373;
+ scroll-snap-align: end;
+}
