@@ -1,0 +1,207 @@
+p {
+  font-size: 90px;
+  font-family: Franklin Gothic Medium;
+  font-weight: bold;
+}
+.redMark {
+  color: #800000;
+}
+.navBar {
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+  margin-left: -1em;
+  margin-right: -1em;
+}
+.navBar a {
+   float: left;
+   color: #f2f2f2;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 20px;
+   font-family: Franklin Gothic Medium;
+}
+.navBar li {
+  display: inline-block;
+}
+.rightSide {
+  margin-left: 0em;
+  margin-top: 0em;
+}
+
+.Bio {
+  position: fixed;
+  left: 0;
+  top: 24;
+  overflow-y: auto;
+  height:2000px;
+  width: 1000px;
+  padding: 50px auto;
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: x hidden;
+  scroll-padding: 100px 0 0 0;
+}
+
+.wrapper_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 300px;
+  height: 250px;
+  padding: 20px;
+  font-size: 20px;
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-snap-align: start;
+  text-decoration: none;
+  font-family: Franklin Gothic Medium;
+ }
+.item1 {
+  margin-top: 75px;
+  display: inline-block;
+  background-color: #FFFFFF;
+  scroll-snap-align: start;
+  width: 462px;
+  height: 500px;
+  float: left;
+  border-bottom: 3px solid #000000;
+}
+.item2 {
+ display: block;
+ width: 462px;
+ height: 500px;
+ background-color: #FFFFFF;
+ scroll-snap-align: end;
+ float: left;
+ margin: 100px;
+}
+
+/* Страница Контактов */
+.pageText {
+  margin-left: 4em;
+}
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+}
+.formaknopka {
+  display: flex;
+  flex-direction: column;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-weight: bold;
+}
+.panel {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+#knopkagmail {
+  margin-left: 10em;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  transform-style: preserve-3d;
+}
+#knopkagmail:after {
+  top: -100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background: #FFFFFF;
+  font-family: Franklin Gothic Medium;
+  font-size: 30px;
+  border-radius: 50px;
+  content: 'Моя почта';
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+}
+#knopkagmail:hover {
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
+
+#knopkawhatsApp {
+  margin-left: 10em;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  transform-style: preserve-3d;
+}
+#knopkawhatsApp:after {
+  top: -100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background: #FFFFFF;
+  font-family: Franklin Gothic Medium;
+  font-size: 30px;
+  border-radius: 5px;
+  content: 'Мой WhatsApp';
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+}
+#knopkawhatsApp:hover {
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
+
+#knopkafeedback {
+  margin-left: 10em;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  transform-style: preserve-3d;
+}
+#knopkafeedback:after {
+  top: -100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background: #FFFFFF;
+  font-family: Franklin Gothic Medium;
+  font-size: 30px;
+  border-radius: 5px;
+  content: 'Написать мне';
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+}
+#knopkafeedback:hover {
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
+#knopkatelegram {
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  transform-style: preserve-3d;
+}
+#knopkatelegram:after {
+  top: -100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background: #FFFFFF;
+  font-family: Franklin Gothic Medium;
+  font-size: 30px;
+  border-radius: 5px;
+  content: 'Мой Telegram';
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+}
+#knopkatelegram:hover {
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
