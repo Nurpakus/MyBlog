@@ -20,31 +20,19 @@
         <a href="/home">Биография</a>
       </li>
       <li>
-      <a href="newProject/contact.html">Связаться со мной</a>
+      <a href="newProject/contact.html">Контакты</a>
       </li>
+      <button id = 'knopkafeedback'><img src = 'img/3884261.png' width = '40' height = '40'/></button>
     </ul>
-    <div class = "boder">
-    <div class = 'pageText'> <p> Связаться со мной</p>
+    <div class = "border">
+    <div class = 'pageText'> <p>Контакты</p></div>
     <div class = 'panel'>
     <button id = 'knopkatelegram'><img src = 'img/87413.png' width = '150' height = '150'/></button>
     <button id = 'knopkawhatsApp'><img src = 'img/whatsApp.png' width = '150' height = '150'/></button>
     <button id = 'knopkagmail'><img src = 'img/281752.png' width = '150' height = '150'/></button>
-    <button id = 'knopkafeedback'><img src = 'img/1617541.png' width = '150' height = '150'/></button>
-      <div id='forma' style = 'display:none;'>
-            <form>
-               <div class = 'formaknopka'>
-               <label>Имя:</label>
-               <input type="name" name = 'name' maxlength="20"/>
-               <label>E-mail:</label>
-               <input type="email" name="email" maxlength="20"/>
-               <label>Ваше сообщение:</label>
-               <input type="message" name="meassage" maxlength="20"/>
-               <input type = 'submit' value="Отправить" maxlength="20"/>
-             </div>
-            </form>
-      </div>
             <div id = 'telegram' style="display:none;">
                 Telegram: @nsib_n54
+                  </div>
             </div>
             <div id = 'whatsApp' style="display:none;">
                 WhatsApp: +79137546980
@@ -54,6 +42,25 @@
            </div>
     </div>
     </div>
+    </div>
+    <div id = 'popup' class = 'popup' style = 'display:none'>
+          <div class = 'popup_body'>
+                <div class = 'popup_content'>
+                      <a href = '' = 'popup_close'>X</a>
+                      <div class = 'popup_form'>
+                        <form>
+                           <div class = 'formaknopka'>
+                             <label>Имя:</label>
+                             <input type="name" name = 'name' maxlength="20"/>
+                             <label>E-mail:</label>
+                             <input type="email" name="email" maxlength="20"/>
+                             <label>Ваше сообщение:</label>
+                             <input type="message" name="meassage" maxlength="20"/>
+                             <input type = 'submit' value="Отправить" maxlength="20"/>
+                          </div>
+                        </form>
+                     </div>
+          </div>
     </div>
   </body>
 </html>
