@@ -1,7 +1,7 @@
 
 window.onload=function(){
     document.getElementById('knopkafeedback').addEventListener('click', function () {
-        document.getElementById('forma').style.display = 'block';
+        document.getElementById('popup').style.display = 'block';
     })
 
     document.getElementById('knopkatelegram').addEventListener('click', function () {
@@ -13,5 +13,4 @@ window.onload=function(){
     document.getElementById('knopkagmail').addEventListener('click', function () {
         document.getElementById('gmail').style.display = 'block';
     })
-    
 }
