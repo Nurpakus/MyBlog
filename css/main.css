@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 p {
   font-size: 90px;
   font-family: Franklin Gothic Medium;
@@ -77,18 +80,31 @@ p {
 }
 
 /* Страница Контактов */
-.pageText {
-  margin-left: 4em;
+.border {
+  background: rgb(255, 255, 255, 0.7);
+  padding: 12px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 2em;
+  border-radius: 30px;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+
 }
-.modal {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #000000;
+#knopkafeedback{
+  float: right;
+  margin-top: 0.5em;
+  margin-right: 2em;
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+.pageText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 .formaknopka {
   display: flex;
@@ -100,108 +116,64 @@ p {
   font-weight: bold;
 }
 .panel {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin-top: 4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    margin-bottom: 3em;
+    margin-left: 3em;
 }
 
 #knopkagmail {
-  margin-left: 10em;
-  box-sizing: border-box;
-  transition: all 500ms ease;
-  transform-style: preserve-3d;
-}
-#knopkagmail:after {
-  top: -100%;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  background: #FFFFFF;
-  font-family: Franklin Gothic Medium;
-  font-size: 30px;
-  border-radius: 50px;
-  content: 'Моя почта';
-  transform-origin: left bottom;
-  transform: rotateX(90deg);
-}
-#knopkagmail:hover {
-	transform-origin: center bottom;
-	transform: rotateX(-90deg) translateY(100%);
-}
+  align-self: stretch;
+
+  }
 
 #knopkawhatsApp {
-  margin-left: 10em;
-  box-sizing: border-box;
-  transition: all 500ms ease;
-  transform-style: preserve-3d;
-}
-#knopkawhatsApp:after {
-  top: -100%;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  background: #FFFFFF;
-  font-family: Franklin Gothic Medium;
-  font-size: 30px;
-  border-radius: 5px;
-  content: 'Мой WhatsApp';
-  transform-origin: left bottom;
-  transform: rotateX(90deg);
-}
-#knopkawhatsApp:hover {
-	transform-origin: center bottom;
-	transform: rotateX(-90deg) translateY(100%);
+  align-self: stretch;
+
 }
 
 #knopkafeedback {
-  margin-left: 10em;
-  box-sizing: border-box;
-  transition: all 500ms ease;
-  transform-style: preserve-3d;
+  align-self: stretch;
 }
-#knopkafeedback:after {
-  top: -100%;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  background: #FFFFFF;
-  font-family: Franklin Gothic Medium;
-  font-size: 30px;
-  border-radius: 5px;
-  content: 'Написать мне';
-  transform-origin: left bottom;
-  transform: rotateX(90deg);
-}
-#knopkafeedback:hover {
-	transform-origin: center bottom;
-	transform: rotateX(-90deg) translateY(100%);
-}
+
 #knopkatelegram {
-  box-sizing: border-box;
-  transition: all 500ms ease;
-  transform-style: preserve-3d;
+  align-self: stretch;
+
 }
-#knopkatelegram:after {
-  top: -100%;
-  left: 0;
+.popup {
+  position: fixed;
   width: 100%;
-  position: absolute;
-  background: #FFFFFF;
-  font-family: Franklin Gothic Medium;
-  font-size: 30px;
-  border-radius: 5px;
-  content: 'Мой Telegram';
-  transform-origin: left bottom;
-  transform: rotateX(90deg);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: 0.8s ease 0s;
 }
-#knopkatelegram:hover {
-	transform-origin: center bottom;
-	transform: rotateX(-90deg) translateY(100%);
+.popup_body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.popup_content {
+ background-color: #fff;
+ color: #000;
+ max-width: 900px;
+ position: relative;
+}
+
+.popup_close {
+  position: absolute;
+  right: 10;
+  left: 10;
+  color: #000;
+  decoration: none;
+}
+.popup_form {
+
 }
